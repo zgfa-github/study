@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css伪元素</title>
+    <style>
+        /*  
+        *1、cssrem 把px自动转为rem单位  在visual studio code里面安装就可以了  或者在vs里面安装 easy less插件
+        *2、flexible.js  把index.less编译为 index.css   
+        em相对于父元素的字体大小来说的
+        rem相对于html元素字体大小来说的
+        rem的优点是可以通过修改html里面的文字大小来改变页面中元素的大小可以整体控制
+
+        媒体查询
+        根据不同设备尺寸设置不同的样式
+        @media mediatype and|not|only () {
+
+        }
+        mediatype:   all  screen
+        举例：
+        @media screen and (max-width:800px ){
+            在我们的屏幕上 并且 最大的宽度是800像素
+            max-width:800px   实际就是等于<=800
+            min-width:500px   实际就是>=500
+        }
+
+        目前流行适配方案
+        方案1   less+媒体查询+rem      
+        方案2   flexible.js+ rem（简单方便点）
+        */
+        body{
+            font-size:62.5%;   /*10/16*100*/
+        }
+        .box {
+            width:100px;
+            height:200px;
+            margin:20px auto;
+            font-size:1rem;
+        }
+       
+    </style>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app" >
+        <div class="box">
+            {{message}}    
+        </div>
+       
+    </div>
+    <script>
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                message:'伪元素努力加'
+            }
+        })
+    </script>
+</body>
+</html>

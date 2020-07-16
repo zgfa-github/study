@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue事件修饰符</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>vue列表过滤应用</h1>
+    <hr>
+    <div id="app">
+        <input type="text" v-model="mytext">{{getComputedList.length}}
+        <ul >
+            <li v-for="data in getComputedList">{{data}}</li>
+        </ul>
+    </div>
+    <script>
+        /**
+        *filter方法过滤
+        *利用计算属性根据状态值响应，同时也没有影响到原始数据datalist,保持不变
+        **/
+        var ele=new Vue({
+            el:'#app',
+            data:{
+               mytext:'',
+               datalist:['aaa','adfd','ccd','erfdk']
+            },mounted(){
+               console.log(123)
+            },computed:{
+                getComputedList(){
+                    return this.datalist.filter((item)=>{
+                        console.log(this.datalist)
+                        return item.indexOf(this.mytext)>-1
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>

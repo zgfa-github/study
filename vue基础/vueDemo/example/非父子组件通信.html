@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-refs</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>v-text</h1>
+    <hr>
+    <div id="app">
+       <wxauthor></wxauthor>
+       <wxuser></wxuser>
+    </div>
+    <script>
+    /**
+    *1.ref放在标签上，拿到的是原生节点
+    *2.ref放在组件上，拿到的是组件对象
+    **/
+        Vue.component('wxauthor',{
+            template:`<div>
+                公众号推送消息
+                <input type="text" ref="mytext"/>
+                <button @click="handleSend">发送</button>
+            </div>`,
+            data(){
+                return {
+                    text:'子组件的状态'
+                }
+            },methods:{
+                handleSend(){
+                    bus.$emit('wxmessage',this.$refs.mytext.value)  //触发
+                }
+            }
+        })
+        Vue.component('wxuser',{
+            template:`<div style="background:red">
+                微信用户收到推送消息:{{text}}
+            </div>`,
+            data(){
+                return {
+                    text:''
+                }
+            },mounted(){
+                console.log('收到消息了哈')
+                console.log('生命周期函数-当前组件的dom 创建完成之后就会调用')
+                bus.$on('wxmessage',(data)=>{    //监听
+                    console.log(data)
+                    this.text=data
+                })
+            },
+            methods:{
+                
+            }
+        })
+        let bus=new Vue()
+        var ele=new Vue({
+            el:'#app'
+           
+        })
+    </script>
+</body>
+</html>

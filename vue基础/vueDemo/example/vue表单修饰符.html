@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue表单修饰符</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>vue表单修饰符</h1>
+    <hr>
+    <div id="app">
+        <input type="text" v-model.lazy="mytext">
+        {{mytext}}
+        <hr>
+        <input type="text" v-model.number="mynumber">
+        {{mynumber}}
+        <hr>
+         <input type="text" v-model.trim="myusername">
+         {{myusername}}||
+    </div>
+    <script>
+        
+        var ele=new Vue({
+            el:'#app',
+            data:{
+              mytext:'',
+              mynumber:0,
+              myusername:""
+            }
+        })
+    </script>
+</body>
+</html>

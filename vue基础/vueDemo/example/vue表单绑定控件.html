@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue表单绑定</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>vue表单绑定</h1>
+    <hr>
+    <div id="app">
+        <input type="text" v-model="text">{{text}}
+        <textarea v-model="text" name="" id="" cols="30" rows="10"></textarea>
+        <hr/>
+        <input type="checkbox" v-model="isCheck" @change="handleChange">记录用户名{{isCheck}}
+        <br>
+        <p>你喜欢的运动有那些？多个复选框checkGroup</p>
+        <input type="checkbox" v-model="checkGroup" value="打篮球">打篮球
+        <input type="checkbox" v-model="checkGroup" value="足球">足球
+        <input type="checkbox" v-model="checkGroup" value="游泳">游泳
+        {{checkGroup}}
+        <hr/>
+        <p>你喜欢的运动,只有一个？</p>
+        <input type="radio" v-model="single" value="打篮球">打篮球
+        <input type="radio" v-model="single" value="足球">足球
+        <input type="radio" v-model="single" value="游泳">游泳
+        {{single}}
+    </div>
+    <script>
+        
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                text:'',
+              isCheck:false,
+              single:true,
+              checkGroup:[]
+            },methods:{
+                handleChange(){
+                    console.log(!this.isCheck)
+                }
+            }
+        })
+    </script>
+</body>
+</html>

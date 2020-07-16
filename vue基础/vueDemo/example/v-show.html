@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>v-if&v-else&v-show</h1>
+    <hr>
+    <div id="app">
+        <!--<div v-if="isLogin">你好，zgf</div>  
+        <div v-else>请先登录</div>-->
+        <div v-show="ishow">v-show</div>
+    </div>
+    <script>
+    //v-if和v-show的区别   
+    //v-if 按需加载，减少服务器的压力
+    //v-show 改变元素的属性，显示和隐藏的区别，切换
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                isLogin:false,
+                ishow:true
+            }
+        })
+    </script>
+</body>
+</html>
