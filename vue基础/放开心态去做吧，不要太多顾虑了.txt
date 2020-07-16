@@ -1,0 +1,15 @@
+先新建github仓库
+
+然后拉取 git clone 
+
+然后在编写内容
+
+再然后常规操作 git add .
+                        git commit -m '备注'
+	       git pull
+	       git status
+	       git push
+
+切换分支写法:  git checkout 分支名
+
+把分支合并到主分支：git merge origin 分支名   
