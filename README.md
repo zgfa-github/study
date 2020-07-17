@@ -5,9 +5,10 @@
 
 |jq|vue|react|
 |:---|:---|:---|
-|加载|vue-cli|create-react-app|
+|加载$(function() {})|vue-cli|create-react-app|
 |$('#id')|vue-router|redux|
 |$.fn.show=fn|vuex|hooks|
+|操作dom元素|改变数据|jsx|
 
 ```
 //vuex代码块
