@@ -1,13 +1,14 @@
-先新建github仓库
+（登录注册任何网站都需要的）
+先新建github仓库   
 
-然后拉取 git clone 
+然后拉取 git clone 仓库路径
 
 然后在编写内容
 
 再然后常规操作 git add .
                         git commit -m '备注'
-	       git pull
 	       git status
+	       git pull
 	       git push
 
 切换分支写法:  git checkout 分支名
