@@ -8,5 +8,5 @@
 |vue-cli|create-react-app|
 |vue-router|redux|
 |vuex|hooks|
-|:---|:---|
+|:---|:---|:---|:---|:---|:---|:---|
 |state|getters|actions|mutations|mutations-types|modules|
