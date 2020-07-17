@@ -6,11 +6,11 @@
 ###### 工作结果好=思维方式+自身能力+热情
 
 ###### webpack模块打包器
-|webpack|
-|:---|
-|entry|
-|output|
-|loader|
+|webpack|axios|
+|:---||:---|
+|entry|api|
+|output|针对项目封装|
+|loader|方便管理|
 |plugins|
 
 ###### 库和框架
