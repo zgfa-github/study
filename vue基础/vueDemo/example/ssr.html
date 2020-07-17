@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>v-for实例</h1>
+    <hr>
+    <div id="app">
+        <div v-for="item in sortitems">{{item}}</div>
+        <ul>
+            <li v-for="(student,index) in sortStudents">{{index}}-{{student.name}}:{{student.age}}</li>
+        </ul>
+    </div>
+    <script>
+    //v-if和v-show的区别   
+    //v-if 按需加载，减少服务器的压力
+    //v-show 改变元素的属性，显示和隐藏的区别，切换
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                items:[1,44,5,66,7,54,0],
+                students:[
+                    {name:'zgf',age:33},
+                    {name:'wz',age:3},
+                    {name:'lq',age:44},
+                    {name:'nzjjjj',age:8},
+                    {name:'wnunn',age:1}
+                ]
+            },
+            computed:{
+                sortitems(){
+                    return this.items.sort(sortNum)
+                },
+                sortStudents(){
+                    return sortByKey(this.students,'age')
+                }
+            }
+        })
+        function sortNum(a,b){
+            return a-b
+        }
+        function sortByKey(array,key){
+            return array.sort(function(a,b){
+                var x=a[key];
+                var y=b[key];
+                return ((x<y)?-1:((x>y)?1:0))
+            })
+        }
+    </script>
+</body>
+</html>
