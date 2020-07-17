@@ -13,27 +13,51 @@
         <button @click="add">增加</button>
     </div>
     <script>
-        // let addmixin={
-        //     updated:function(){
-        //         console.log('数据发生变化了,变成了'+ele.$data.count)
-        //     }
-        // }
-        Vue.mixin('add11',function(){
-            console.log('数据发生变化了,变成了'+ele.$data.count)
-        })
+        /**
+        *   mixins 混入对象，其中混入对象可以包含任意组件的选项
+        *   mixins 钩子要比组件自身钩子之前调用
+        *   在实际的vue项目开发中，往往团队成员在合作开发中会定义一些公用的组件，方法，属性，过滤器等，然后在业务组件中引入使用
+        *   在组件中一个个引入是一种方式，但是，倘若有些公共组件使用频率很高，使用mixin（混入）就可以很方便地引入公用部分，
+            mixin是一个js对象文件
+        *   import mixin from 'mixins/mixin';
+        *   Vue.mixin(mixin)
+        *   直接在组件中直接通过this使用
+        */
+        let addmixin={
+            created:function(){
+                console.log('mixin created')
+            },beforeUpdate(){
+                console.log('mixins 更新之前')
+            },
+            updated:function(){
+                console.log('数据发生变化了,变成了：'+ele.$data.count)
+            },methods:{
+                hello(){
+                    console.log(123456789)
+                }
+            }
+        }
+        // Vue.mixin('add11',function(){
+        //     console.log('数据发生变化了'+ele.$data.count)
+        // })
         //一般建议少用v-html  防止被攻击
         var ele=new Vue({
             el:'#app',
             data:{
                count:0
+            },created(){
+                console.log('组件 created')
+                
+            },mounted(){
+                this.hello()
             },
             methods: {
                 add(){
                     this.count++;
                 }
             }
-            // ,
-            // mixins:[addmixin]
+            ,
+            mixins:[addmixin]
         })
     </script>
 </body>
