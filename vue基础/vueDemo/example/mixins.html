@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mixins的用法</title>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>mixins</h1>
+    <hr>
+    <div id="app">
+        <span>{{count}}---</span>
+        <button @click="add">增加</button>
+    </div>
+    <script>
+        // let addmixin={
+        //     updated:function(){
+        //         console.log('数据发生变化了,变成了'+ele.$data.count)
+        //     }
+        // }
+        Vue.mixin('add11',function(){
+            console.log('数据发生变化了,变成了'+ele.$data.count)
+        })
+        //一般建议少用v-html  防止被攻击
+        var ele=new Vue({
+            el:'#app',
+            data:{
+               count:0
+            },
+            methods: {
+                add(){
+                    this.count++;
+                }
+            }
+            // ,
+            // mixins:[addmixin]
+        })
+    </script>
+</body>
+</html>

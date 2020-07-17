@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue单个元素过渡动画效果</title>
+    <style>
+    /**
+    *过渡动画
+    **/
+        .kerwinfade-enter-active,.kerwinfade-leave-active{
+            transition:all 2s;
+        }
+        .kerwinfade-enter,.kerwinfade-leave-to{
+            opacity:0;
+            /*transform:translateX(-100px);*/
+            transform:translateX(100px);
+        }
+        /**
+    *关键帧动画
+    **/
+        .kerwinbounce-enter-active{
+            animation:bounce-in 2s;
+        }
+        .kerwinbounce-leave-active{
+            animation:bounce-in 2s reverse;
+        }
+        @keyframes bounce-in{
+            0%{
+                opacity: 0;
+                transform:translateX(100px);
+            }
+             50%{
+                opacity: 0;
+                transform:translateX(50px);
+            }
+            100%{
+                opacity:1;
+                transform:translateX(0px);
+            }
+        }
+    </style>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>vue单个元素过渡动画效果</h1>
+    <hr>
+    <div id="app">
+        <!--
+            ?如果是同一个标签它的动画失效了，怎么解决呢
+            diff算法问题
+            1、同一个标签的情况下，需要加key属性区分,设置唯一值
+            2、可以取不同标签，也可以实现动画，不过这样做没意义
+            mode:in-out;out-in
+        -->
+       <button @click="handleClick">点击触发动画</button>
+       <transition name="kerwinfade" mode="in-out">
+        <p v-if="isShow" key="1">aaaaaaa</p>
+        <p v-else key="2">bbbbbbb</p>
+        <!--<div v-else>bbbbbbb</div>-->
+       </transition>
+      
+    </div>
+    <script>
+      
+        var ele=new Vue({
+            el:'#app',
+            data:{
+               msg:'8888',
+               isShow:false
+            },methods:{
+                handleClick(){
+                    this.isShow=!this.isShow
+                }
+            }
+        })
+    </script>
+</body>
+</html>

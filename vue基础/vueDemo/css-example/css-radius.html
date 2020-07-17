@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css伪元素</title>
+    <style>
+        /*  
+        *1、伪元素是 ::    为了区分伪选择器 :  
+        *2、content必须css画三角形和对话框写,没值的情况下  为content:''
+        */
+        .box {
+            width:100px;
+            height:200px;
+            margin:20px auto;
+            border:1px solid #f00;
+            background: #0066cc;
+            border-radius:100px 0 0 100px;
+        }
+       
+    </style>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    
+    <div id="app" >
+        <div class="box">
+            {{message}}    
+        </div>
+       
+    </div>
+    <script>
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                message:'伪元素努力加'
+            }
+        })
+    </script>
+</body>
+</html>

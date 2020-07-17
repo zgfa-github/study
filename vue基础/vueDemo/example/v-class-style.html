@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <style> 
+        .red{
+            background:#ff0000;
+        }
+        .yellow{
+            background:yellow;
+        }
+    </style>
+    <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+    <h1>v-if&v-else&v-show</h1>
+    <hr>
+    <div id="app">
+        <button @click="handleClick">点击</button>
+        <div :class="isActive?'red':'yellow'">我是动态绑定class-三目写法</div>
+        <div :class="classobj">我是动态绑定class-对象写法</div>
+        <div :class="classarr">我是动态绑定class-数组写法</div>
+        <div :style="'background:'+(isActive?'red':'yellow')">我是动态绑定style-三目写法</div>
+        <div :style="styleobj">我是动态绑定style-对象写法</div>
+        <div :style="styleArr">我是动态绑定style-数组写法</div>
+    </div>
+    <script>
+   
+        var ele=new Vue({
+            el:'#app',
+            data:{
+                isLogin:false,
+                isActive:true,
+                classobj:{
+                    a:true,
+                    b:true   // a,b就是class名字
+                },
+                classarr:["a","b"],
+                styleobj:{
+                    background:'yellow'
+                },
+                styleArr:[{background:'#66cc00',color:'#fff'}]
+            },methods:{
+                handleClick(){
+                    this.isActive=!this.isActive
+                }
+            }
+        })
+    </script>
+</body>
+</html>
