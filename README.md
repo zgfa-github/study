@@ -11,8 +11,16 @@
 
 ```
 //vuex代码块
-state={};
+state={}
 actions={}
-
+mutations={}
+getters={}
 ```
-[点击前往谷歌搜索的链接](https://juejin.im/post/5de87444518825124c50cd36)
+```
+//异步不同方式，优缺点
+new Promise()
+async fn(){
+let res=await getData()
+}
+```
+[点击前往掘金的链接](https://juejin.im/post/5de87444518825124c50cd36)
