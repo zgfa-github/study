@@ -37,4 +37,5 @@ let res=await getData()
 |flex|gird|float|
 |:---|:---|:---|
 |弹性布局|栅格布局|脱离文档流|
+
 [点击前往掘金的链接](https://juejin.im/post/5de87444518825124c50cd36)
