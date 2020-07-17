@@ -8,3 +8,11 @@
 |vue-cli|create-react-app|
 |vue-router|redux|
 |vuex|hooks|
+
+```
+//vuex代码块
+state={};
+actions={}
+
+```
+[点击前往谷歌搜索的链接](https://juejin.im/post/5de87444518825124c50cd36)
