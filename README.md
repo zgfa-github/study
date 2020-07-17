@@ -8,10 +8,10 @@
 ###### webpack模块打包器
 |webpack|axios|
 |:---||:---|
-|entry|api|
+|entry|它的api|
 |output|针对项目封装|
 |loader|方便管理|
-|plugins|
+|plugins|官网|
 
 ###### 库和框架
 |jq|vue|react|
