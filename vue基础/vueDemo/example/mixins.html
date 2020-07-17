@@ -15,13 +15,14 @@
     <script>
         /**
         *   mixins 混入对象，其中混入对象可以包含任意组件的选项
-        *   mixins 钩子要比组件自身钩子之前调用
+        *   mixins 同一个生命周期，混入对象会比组件的先执行
         *   在实际的vue项目开发中，往往团队成员在合作开发中会定义一些公用的组件，方法，属性，过滤器等，然后在业务组件中引入使用
         *   在组件中一个个引入是一种方式，但是，倘若有些公共组件使用频率很高，使用mixin（混入）就可以很方便地引入公用部分，
             mixin是一个js对象文件
         *   import mixin from 'mixins/mixin';
         *   Vue.mixin(mixin)
         *   直接在组件中直接通过this使用
+        *   需要注意：谨慎使用 global mixin，局部的随意使用
         */
         let addmixin={
             created:function(){
