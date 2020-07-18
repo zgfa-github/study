@@ -5,7 +5,7 @@
 ###### 时间管理 思维 思路 方法 弄懂原理
 ###### 工作结果好=思维方式+自身能力+热情
 
-![Image](https://gitmind.cn/app/doc/48b623721)
+![Image](G:\1.png)
 
 ###### webpack模块打包器
 |webpack|
