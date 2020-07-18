@@ -9,7 +9,7 @@
 
 ###### webpack模块打包器
 |webpack|Object|Array|String|null|undefined|
-|:---|:---|:---|:---|:---|
+|:---|:---|:---|:---|:---|:---|
 |entry|Object.values|forEach|indexOf||
 |output|Object.keys|map|split||
 |loader|Object.assign|filter|join||
