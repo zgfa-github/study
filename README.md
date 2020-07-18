@@ -9,9 +9,14 @@
 ###### es5和es6的演变升级
 |ES5|ES6|
 |:---|:---|
-|var|let|
+|var|let 块级作用域|
 |prototyp|class|
 |function(){}|()=>{}|
+||解构赋值|
+||展开运算符|
+||数组find和findIndex和includes|
+||字符串新增方法和模板字符串|
+||对象新增方法与babel|
 
 ###### js事件执行机制  (Event Loop)
 |执行栈（主线程）|队列|
