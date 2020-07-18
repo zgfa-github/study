@@ -1,19 +1,19 @@
 ﻿# study
 学习之旅
 ##### 解决问题的能力，学习能力，自然你就money了
-##### 热爱工作，快乐工作，感受生活，享受生活
+##### 热爱工作，快乐工作
 ###### 时间管理 思维 思路 方法 弄懂原理
 ###### 工作结果好=思维方式+自身能力+热情
 
 ![Image](./1.png)
 
 ###### webpack模块打包器
-|webpack|Object|Array|
-|:---|:---|:---|
-|entry|Object.values|forEach|
-|output|Object.keys|map|
-|loader|Object.assign|filter|
-|plugins|Object.prototype.toString|reduce|
+|webpack|Object|Array|String|null|undefined|
+|:---|:---|:---|:---|:---|
+|entry|Object.values|forEach|indexOf||
+|output|Object.keys|map|split||
+|loader|Object.assign|filter|join||
+|plugins|Object.prototype.toString|reduce|charAt||
 
 ###### 库和框架
 |jq|vue|react|
