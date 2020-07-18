@@ -7,13 +7,28 @@
 
 ![Image](./1.png)
 
+###### 引用类型
+|Number|String|Null|Undefined|Boolean|
+|:---|:---|:---|:---|:---|
+||indexOf||||
+||split||||
+||charAt||||
+||join||||
+###### 引用类型
+|Object|Array|
+|:---|:---|
+|Object.values|forEach|
+|Object.keys|map|
+|Object.assign|filter|
+|Object.prototype.toString|reduce|
+
 ###### webpack模块打包器
-|webpack|Object|Array|String|null|undefined|
-|:---|:---|:---|:---|:---|:---|
-|entry|Object.values|forEach|indexOf||
-|output|Object.keys|map|split||
-|loader|Object.assign|filter|join||
-|plugins|Object.prototype.toString|reduce|charAt||
+|webpack|
+|:---|
+|entry|
+|output|
+|loader|
+|plugins|
 
 ###### 库和框架
 |jq|vue|react|
@@ -25,6 +40,7 @@
 
 ```
 //vuex代码块
+mapState\mapActions\mapMutations\mapGetters
 state={}
 actions={}
 mutations={}
