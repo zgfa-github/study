@@ -14,9 +14,9 @@
 |function(){}|()=>{}|
 
 ###### css样式的演变发展
-|flex|gird|float|
-|:---|:---|:---|
-|弹性布局|栅格布局|脱离文档流|
+|flex|gird|float|rem|vw|
+|:---|:---|:---|:---|:---|
+|弹性布局|栅格布局|脱离文档流|||
 
 ###### 基本类型
 |Number|String|Null|Undefined|Boolean|
@@ -25,6 +25,7 @@
 ||split||||
 ||charAt||||
 ||join||||
+||subStr||||
 ###### 引用类型
 |Object|Array|
 |:---|:---|
