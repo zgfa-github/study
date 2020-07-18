@@ -18,15 +18,15 @@
 |:---|:---|:---|:---|:---|
 |弹性布局|栅格布局|脱离文档流|||
 
-###### 基本类型
-|Number|String|Null|Undefined|Boolean|
-|:---|:---|:---|:---|:---|
-|Number|indexOf||||
-||split||||
-||charAt||||
-||join||||
-||subStr||||
-###### 引用类型
+###### 基本类型()
+|Number|String|Null|Undefined|Boolean|typeof|instanceof|
+|:---|:---|:---|:---|:---|:---|:---|
+|Number|indexOf||||'number'||
+||split||||'string'||
+||charAt||||'null'||
+||join||||'undefined'||
+||subStr||||'boolean'||
+###### 引用类型()
 |Object|Array|
 |:---|:---|
 |Object.values|forEach|
