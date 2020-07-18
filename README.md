@@ -39,6 +39,8 @@
 ||charAt||||'null'||
 ||join||||'undefined'||
 ||substr||||'boolean'||
+||substring||||||
+||slice||||||
 ###### 引用类型()
 |Object|Array|
 |:---|:---|
