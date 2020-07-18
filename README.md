@@ -13,19 +13,19 @@
 |prototyp|class|
 |function(){}|()=>{}|
 
-###### css样式的演变发展
-|flex|gird|float|rem|vw|
-|:---|:---|:---|:---|:---|
-|弹性布局|栅格布局|脱离文档流|||
+###### css样式的演变发展  模块编译   适配
+|flex|gird|float|less|sass|stylus|rem|vw|
+|:---|:---|:---|:---|:---|:---|:---|:---|
+|弹性布局|栅格布局|脱离文档流||||||
 
-###### 基本类型()
+###### 基本类型()  检测
 |Number|String|Null|Undefined|Boolean|typeof|instanceof|
 |:---|:---|:---|:---|:---|:---|:---|
-|Number|indexOf||||'number'||
-||split||||'string'||
+|Number|indexOf|||true|'number'||
+||split|||false|'string'||
 ||charAt||||'null'||
 ||join||||'undefined'||
-||subStr||||'boolean'||
+||substr||||'boolean'||
 ###### 引用类型()
 |Object|Array|
 |:---|:---|
@@ -35,12 +35,14 @@
 |Object.prototype.toString|reduce|
 
 ###### 库和框架
-|jq|vue|react|
-|:---|:---|:---|
-|加载$(function() {})|vue-cli|create-react-app|
-|$('#id')|vue-router|redux|
-|$.fn.show=fn|vuex|hooks|
-|操作dom元素|改变数据|jsx|
+|jq|vue|react|ng|
+|:---|:---|:---|:---|
+|加载$(function() {})|vue-cli|create-react-app||
+|$('#id')|vue-router|redux||
+|$.fn.show=fn|vuex|hooks||
+|操作dom元素|改变数据|jsx||
+||生态|社区生态||
+||知识点应用场景|应用场景||
 
 ```
 //vuex代码块
@@ -52,7 +54,13 @@ getters={}
 ```
 ```
 //异步不同方式，优缺点
-new Promise()
+new Promise((resolve,reject)=>{
+	
+}).then(res=>{
+
+}).catch(err=>{
+
+})
 async fn(){
 let res=await getData()
 }
