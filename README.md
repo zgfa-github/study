@@ -8,12 +8,12 @@
 ![Image](./1.png)
 
 ###### webpack模块打包器
-|webpack|
-|:---|
-|entry|
-|output|
-|loader|
-|plugins|
+|webpack|Object|Array|
+|:---|:---|:---|
+|entry|Object.values|forEach|
+|output|Object.keys|map|
+|loader|Object.assign|filter|
+|plugins|Object.prototype.toString|reduce|
 
 ###### 库和框架
 |jq|vue|react|
