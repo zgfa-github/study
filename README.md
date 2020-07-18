@@ -6,11 +6,22 @@
 ###### 工作结果好=思维方式+自身能力+热情
 
 ![Image](./1.png)
+###### es5和es6的演变升级
+|ES5|ES6|
+|:---|:---|
+|var|let|
+|prototyp|class|
+|function(){}|()=>{}|
 
-###### 引用类型
+###### css样式的演变发展
+|flex|gird|float|
+|:---|:---|:---|
+|弹性布局|栅格布局|脱离文档流|
+
+###### 基本类型
 |Number|String|Null|Undefined|Boolean|
 |:---|:---|:---|:---|:---|
-||indexOf||||
+|Number|indexOf||||
 ||split||||
 ||charAt||||
 ||join||||
@@ -21,14 +32,6 @@
 |Object.keys|map|
 |Object.assign|filter|
 |Object.prototype.toString|reduce|
-
-###### webpack模块打包器
-|webpack|
-|:---|
-|entry|
-|output|
-|loader|
-|plugins|
 
 ###### 库和框架
 |jq|vue|react|
@@ -53,15 +56,13 @@ async fn(){
 let res=await getData()
 }
 ```
-###### es5和es6的演变升级
-|ES5|ES6|
+###### webpack模块打包器
+|webpack|axios|
 |:---|:---|
-|var|let|
-|prototyp|class|
-|function(){}|()=>{}|
-###### css样式的演变发展
-|flex|gird|float|
-|:---|:---|:---|
-|弹性布局|栅格布局|脱离文档流|
+|entry|axios({})|
+|output|get|
+|loader|post|
+|plugins||
+
 
 [点击前往掘金的链接](https://juejin.im/post/5de87444518825124c50cd36)
