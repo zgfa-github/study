@@ -10,8 +10,8 @@
 |ES5|ES6|ts   .ts文件会构建成js|
 |:---|:---|:---|
 |var|let 块级作用域|趋向后端语言的规范写法|
-|prototyp|class|var num:number/(a:string,b:number):boolean=>{}|
-|function(){}|()=>{}|可以结合vue和react|
+|prototyp|class|var num:number=10 / (a:string,b:number):boolean=>{}|
+|function(){}|()=>{}|可以结合vue和react开发项目|
 ||解构赋值|可以有修饰符，例如public|
 ||展开运算符|还可以命名空间|
 ||数组find和findIndex和includes|接口interface|
