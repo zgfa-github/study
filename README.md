@@ -7,16 +7,16 @@
 
 ![Image](./1.png)
 ###### es5和es6的演变升级
-|ES5|ES6|ts|
+|ES5|ES6|ts   .ts文件会构建成js|
 |:---|:---|:---|
 |var|let 块级作用域|趋向后端语言的规范写法|
-|prototyp|class|var num:number   (a:string,b:number):boolean=>{}|
+|prototyp|class|var num:number/(a:string,b:number):boolean=>{}|
 |function(){}|()=>{}|可以结合vue和react|
-||解构赋值||
-||展开运算符||
-||数组find和findIndex和includes||
-||字符串新增方法和模板字符串||
-||对象新增方法与babel||
+||解构赋值|可以有修饰符，例如public|
+||展开运算符|还可以命名空间|
+||数组find和findIndex和includes|接口interface|
+||字符串新增方法和模板字符串|枚举类型|
+||对象新增方法与babel|any|
 
 ###### js事件执行机制  (Event Loop)
 |执行栈（主线程）|队列|
