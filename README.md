@@ -5,6 +5,31 @@
 ###### 时间管理 思维 思路 方法 弄懂原理
 ###### 工作结果好=思维方式+自身能力+热情
 
+```
+1、html/css：包括html语义化、css布局等
+
+2、dom/bom：dom操作，dom api，浏览器属性/事件等
+
+3、js语言：闭包、js语法、原型链继承、es6、es7、typescript等
+
+4、框架：React/Vue/Angular
+
+5、打包构建：webpack/rollup
+
+6、网络协议：http/https协议、tcp/ip、dns、cdn等
+
+7、数据结构和算法：搜索、排序、链表、树等
+
+8、操作系统：linux基本命令、进程线程、网络、内存、系统调用等
+
+9、服务端：nodejs、python、java、nginx等
+
+10、跨端：webview、react-native、flutter等
+
+
+
+```
+
 ![Image](./1.png)
 ###### es5和es6的演变升级
 |ES5|ES6|ts   .ts文件会构建成js|
