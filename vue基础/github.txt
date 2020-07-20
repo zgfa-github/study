@@ -10,7 +10,12 @@
 	       git status
 	       git pull
 	       git push
+新建分支      ：git branch 分支名
 
 切换分支写法:  git checkout 分支名
-
+git add .
+git commit -m '备注'
 把分支合并到主分支：git merge origin 分支名   
+git push
+
+删除分支     ：git branch -D 分支名
