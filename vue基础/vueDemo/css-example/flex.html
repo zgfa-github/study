@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex弹性布局</title>
+    <style>
+    /**
+    *1、百分比布局，也叫流式布局。代表网站：优酷、百度、天猫、腾讯
+        好处：大屏幕下显示更多的内容；
+        坏处：宽屏下比例会有一些不协调；
+    *2、等比缩放布局，也叫rem布局。代表网站：网易、爱奇艺、淘宝、美团
+    */
+    .parent {
+        width:300px;
+        height:200px;
+        border:1px solid #d9d9d9;
+        display: flex;
+    }
+    .child {
+        /*width:100px;
+        height:100px;*/
+        margin:auto;
+        background:pink;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">购物车</div>
+    </div>
+</body>
+</html>

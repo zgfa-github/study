@@ -123,6 +123,6 @@ let res=await getData()
 |loader|post|
 |plugins||
 
-
+[点击前往有关vue详细文档概括](https://segmentfault.com/a/1190000012692321#comment-area)
 [点击前往掘金的链接](https://juejin.im/post/5de87444518825124c50cd36)
 [深有启发，点赞](https://www.jianshu.com/p/e8b143adb0d8)
